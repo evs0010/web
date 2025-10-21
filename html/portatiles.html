@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Gamer - Portátiles</title>
+  <link rel="stylesheet" href="/css/portatiles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      <img src="/img/logo.png" alt="Logo">
+    </div>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar portátiles...">
+      <button>🔍</button>
+    </div>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="/index.html">Inicio</a></li> 
+        <li><a href="">Portátiles</a></li>
+        <li><a href="">Ofertas</a></li>
+        <li><a href="">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="main-content">
+    <aside class="filtros">
+      <h3>Filtrar por:</h3>
+      <form>
+
+        <label>Marca:</label>
+        <select>
+          <option>Asus</option>
+          <option>HP</option>
+          <option>Lenovo</option>
+          <option>Acer</option>
+          <option>MSI</option>
+          <option>Gigabyte</option>
+        </select>
+
+
+        <label>Precio máximo:</label>
+        <input type="number" placeholder="€">
+
+
+        <label>Procesador:</label>
+        <select>
+          <option>Intel Core i5</option>
+          <option>Intel Core i7</option>
+          <option>Intel Core i9</option>
+          <option>AMD Ryzen 5</option>
+          <option>AMD Ryzen 7</option>
+          <option>AMD Ryzen 9</option>
+        </select>
+
+
+        <label>Tarjeta gráfica:</label>
+        <select>
+          <option>NVIDIA RTX 3050</option>
+          <option>NVIDIA RTX 4050</option>
+          <option>NVIDIA RTX 4060</option>
+          <option>AMD Radeon RX 7600M</option>
+        </select>
+
+
+        <label>Memoria RAM:</label>
+        <select>
+          <option>8 GB</option>
+          <option>16 GB</option>
+          <option>32 GB</option>
+          <option>64 GB</option>
+        </select>
+
+
+        <label>Tamaño de pantalla:</label>
+        <select>
+          <option>14"</option>
+          <option>15.6"</option>
+          <option>17"</option>
+        </select>
+
+
+        <label>Sistema operativo:</label>
+        <select>
+          <option>Windows 11</option>
+          <option>Windows 10</option>
+          <option>Sin sistema operativo</option>
+        </select>
+
+    
+        <label>Disponibilidad:</label>
+        <select>
+          <option>En stock</option>
+          <option>Próximamente</option>
+        </select>
+
+        <button type="submit">Aplicar filtros</button>
+      </form>
+    </aside>
+
+    <section class="listado">
+      <h2>Portátiles disponibles</h2>
+      <div class="grid-productos">
+        <div class="producto">
+          <img src="/img/asus.png" alt="Producto 1"> 
+          <h3>ASUS TUF Gaming A15</h3>
+          <p>Ryzen 7 - RTX 4060 - 16GB RAM</p>
+          <a href="/html/productos.html">Ver producto</a> 
+        </div>
+
+        <div class="producto">
+          <img src="/img/hp.png" alt="Producto 2">
+          <h3>HP Victus 16</h3>
+          <p>Intel i7 - RTX 3050 - 16GB RAM</p>
+          <a href="">Ver producto</a>
+        </div>
+
+        <div class="producto">
+          <img src="/img/msi.png" alt="Producto 3">
+          <h3>MSI Thin</h3>
+          <p>Ryzen 5 - RTX 4050 - 16GB RAM</p>
+          <a href="">Ver producto</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <img src="/img/footer.png" alt="Footer">
+  </footer>
+
+</body>
+</html>
