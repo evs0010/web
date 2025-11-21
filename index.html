@@ -20,10 +20,10 @@
       </a>
     </div>
 
-    <div class="search-bar">
-      <input type="text" placeholder="Buscar productos...">
-      <button>🔍</button>
+    <div class="buscador-contenedor">
+      <input type="text" id="buscador" placeholder="Buscar productos...">
     </div>
+
 
     <nav class="nav">
       <ul>
@@ -40,18 +40,34 @@
   <section id="banner" class="banner-video">
     <div class="overlay"></div>
 
-    <iframe
-      src="https://www.youtube.com/embed/hb2j3Yd20xY?si=B_H9Cpyw1lS1gpSJ&autoplay=1&mute=1&loop=1&playlist=hb2j3Yd20xY"
-      title="YouTube video player" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen>
-    </iframe>
+    <video autoplay muted loop playsinline>
+      <source src="video/pokemon.mp4" type="video/mp4">
+      Tu navegador no soporta el video.
+    </video>
 
-    <div class="banner-texto">
-      <h1>Tienda Gamer</h1>
-      <p>Los mejores productos gamers a un solo clic</p>
+<div class="banner-texto typing-container">
+  <h1 class="typing-line">Tienda Gamer</h1>
+  <p class="typing-line delay">Los mejores productos gamers a un solo clic</p>
+</div>
+
+  </section>
+
+  <section class="slider-promos">
+    <div class="slider-track">
+      <div class="slide"><img src="./img/promocion1.png" alt="Promocion1"></div>
+      <div class="slide"><img src="./img/promocion2.png" alt="Promocion2"></div>
+      <div class="slide"><img src="./img/promocion3.png" alt="Promocion3"></div>
+
+
+
+      <!-- DUPLICACIÓN PARA BUCLE INFINITO SUAVE -->
+      <div class="slide"><img src="./img/promocion1.png" alt="Promocion1"></div>
+      <div class="slide"><img src="./img/promocion2.png" alt="Promocion2"></div>
+      <div class="slide"><img src="./img/promocion3.png" alt="Promocion3"></div>
     </div>
   </section>
+
+
 
 
   <!-- PRODUCTOS DESTACADOS -->
@@ -78,20 +94,37 @@
 
       <div class="producto">
         <a href="html/productos.html" class="producto-enlace">
-          <img src="img/asus.png" alt="ASUS TUF Gaming A15">
-          <h3>ASUS TUF Gaming A15</h3>
-          <p>Ryzen 7, RTX 4060, 16GB RAM, SSD 1TB — máximo rendimiento gaming.</p>
+          <img src="img/msi.png" alt="MSI Gaming">
+          <h3>MSI Gaming</h3>
+          <p>AMD Ryzen 7 7735HS 16GB 512GB SSD RTX 3050 Windows 11</p>
         </a>
       </div>
+
 
       <div class="producto">
         <a href="html/productos.html" class="producto-enlace">
-          <img src="img/asus.png" alt="ASUS TUF Gaming A15">
-          <h3>ASUS TUF Gaming A15</h3>
-          <p>Ryzen 7, RTX 4060, 16GB RAM, SSD 1TB — máximo rendimiento gaming.</p>
+          <img src="img/pc.png" alt="PC Gaming">
+          <h3>PC Gaming</h3>
+          <p>Torre PC Forgeon Arcanite ARGB Mesh Torre ATX Negra</p>
         </a>
       </div>
 
+
+      <div class="producto">
+        <a href="html/videojuegos.html" class="producto-enlace">
+          <img src="img/nintendo.png" alt="Nintendo Switch">
+          <h3>Nintendo Switch</h3>
+          <p>La consola híbrida más vendida.</p>
+        </a>
+      </div>
+
+      <div class="producto">
+        <a href="html/videojuegos.html" class="producto-enlace">
+          <img src="img/pokemon.png" alt="Pokémon">
+          <h3>Pokémon Edición Especial</h3>
+          <p>Atrapa aventuras únicas y legendarias.</p>
+        </a>
+      </div>
 
       <div class="producto">
         <a href="html/videojuegos.html" class="producto-enlace">
@@ -103,27 +136,12 @@
 
       <div class="producto">
         <a href="html/videojuegos.html" class="producto-enlace">
-          <img src="img/ps5.png" alt="ps5">
-          <h3>PlayStation 5</h3>
-          <p>Sony PlayStation 5 Slim</p>
+          <img src="img/fifa.png" alt="Fifa">
+          <h3>FC 26</h3>
+          <p>PS5 EA Sports FC™ 26 </p>
         </a>
       </div>
 
-      <div class="producto">
-        <a href="html/videojuegos.html" class="producto-enlace">
-          <img src="img/ps5.png" alt="ps5">
-          <h3>PlayStation 5</h3>
-          <p>Sony PlayStation 5 Slim</p>
-        </a>
-      </div>
-
-      <div class="producto">
-        <a href="html/videojuegos.html" class="producto-enlace">
-          <img src="img/ps5.png" alt="ps5">
-          <h3>PlayStation 5</h3>
-          <p>Sony PlayStation 5 Slim</p>
-        </a>
-      </div>
 
     </div>
   </section>
@@ -188,7 +206,7 @@
     const productos = document.getElementById("productos-destacados");
 
     productos.addEventListener("click", () => {
-      musica.volume = 0.4; 
+      musica.volume = 0.4;
       musica.play();
     });
   </script>
