@@ -1,7 +1,9 @@
-// main.scss
-@use 'partials/variables' as *;  // Importa las variables
-@use 'partials/header' as *;     // Importa los estilos del header
-@use 'partials/footer' as *;     // Importa los estilos del footer
-@use 'partials/producto' as *;   // Importa los estilos de los productos
-@use 'partials/slider' as *;     // Importa los estilos del slider
-@use 'partials/auth' as *;
+/* 1. Bootstrap desde node_modules */
+@use "../node_modules/bootstrap/scss/bootstrap" as *;
+
+/* 2. Tus estilos */
+@use "partials/variables" as *;
+@use "partials/header" as *;
+@use "partials/footer" as *;
+@use "partials/producto" as *;
+@use "partials/slider" as *;
