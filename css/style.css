@@ -284,6 +284,27 @@
   background-color: #0097a7;
 }
 
+/* Tarjetas de ofertas */
+.card-oferta {
+  background-color: #ffffff; /* tarjeta blanca */
+  color: #000000; /* texto principal oscuro */
+}
+
+.card-oferta .card-text {
+  color: #6c757d; /* gris suave para descripciones */
+}
+
+/* Color primario para precios */
+.text-primario {
+  color: #4BB7AE !important;
+}
+
+/* Color primario para el badge de descuento */
+.badge-descuento {
+  background-color: #4BB7AE !important;
+  color: #ffffff !important;
+}
+
 .slider-promos {
   width: 100%;
   height: 550px;
@@ -353,6 +374,82 @@
   51%, 100% {
     border-color: transparent;
   }
+}
+.auth-section {
+  background-color: #0d0d0d;
+  padding: 80px 0;
+  min-height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.auth-section h2 {
+  text-align: center;
+  color: #00bcd4;
+  font-size: 2.2rem;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.auth-card {
+  background-color: #1a1a1a;
+  width: 100%;
+  max-width: 480px;
+  margin: auto;
+  padding: 40px 35px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.auth-label {
+  color: #00bcd4;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.auth-input {
+  width: 100%;
+  padding: 12px 15px;
+  background-color: #0d0d0d;
+  border: 1px solid #00bcd4;
+  border-radius: 10px;
+  color: #fff;
+  transition: 0.3s;
+}
+.auth-input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #00bcd4;
+}
+
+.auth-btn {
+  width: 100%;
+  background-color: #00bcd4;
+  color: #000;
+  padding: 12px;
+  margin-top: 20px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.auth-btn:hover {
+  background-color: #00bcd4;
+}
+
+.auth-text {
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+}
+.auth-text a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+.auth-text a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */

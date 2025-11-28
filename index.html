@@ -29,9 +29,9 @@
       <ul>
         <li><a href="index.html" class="activo">Inicio</a></li>
         <li><a href="html/portatiles.html">Portatiles Gaming</a></li>
-        <li><a href="html/videojuegos.html">videojuegos</a></li>
-        <li><a href="#">Ofertas</a></li>
-        <li><a href="html/contactanos.html">Contacto</a></li>
+        <li><a href="html/videojuegos.html">Videojuegos</a></li>
+        <li><a href="../html/ofertas.html ">Ofertas</a></li>
+        <li><a href="html/contactanos.html">Inicio Sesion</a></li>
       </ul>
     </nav>
   </header>
@@ -45,10 +45,10 @@
       Tu navegador no soporta el video.
     </video>
 
-<div class="banner-texto typing-container">
-  <h1 class="typing-line">Tienda Gamer</h1>
-  <p class="typing-line delay">Los mejores productos gamers a un solo clic</p>
-</div>
+    <div class="banner-texto typing-container">
+      <h1 class="typing-line">Tienda Gamer</h1>
+      <p class="typing-line delay">Los mejores productos gamers a un solo clic</p>
+    </div>
 
   </section>
 
@@ -80,11 +80,12 @@
           <h3>ASUS TUF Gaming A15</h3>
           <p>Ryzen 7, RTX 4060, 16GB RAM, SSD 1TB — máximo rendimiento gaming.</p>
         </a>
+
       </div>
 
 
       <div class="producto">
-        <a href="html/productos.html" class="producto-enlace">
+        <a href="" class="">
           <img src="img/hp.png" alt="HP Victus 16">
           <h3>HP Victus 16</h3>
           <p>Intel Core i5-1335U, 16GB, 1TB SSD, excelente para estudiantes y gamers.</p>
@@ -93,7 +94,7 @@
 
 
       <div class="producto">
-        <a href="html/productos.html" class="producto-enlace">
+        <a href="" class="">
           <img src="img/msi.png" alt="MSI Gaming">
           <h3>MSI Gaming</h3>
           <p>AMD Ryzen 7 7735HS 16GB 512GB SSD RTX 3050 Windows 11</p>
@@ -102,7 +103,7 @@
 
 
       <div class="producto">
-        <a href="html/productos.html" class="producto-enlace">
+        <a href="" class="">
           <img src="img/pc.png" alt="PC Gaming">
           <h3>PC Gaming</h3>
           <p>Torre PC Forgeon Arcanite ARGB Mesh Torre ATX Negra</p>
@@ -111,7 +112,7 @@
 
 
       <div class="producto">
-        <a href="html/videojuegos.html" class="producto-enlace">
+        <a href="" class="">
           <img src="img/nintendo.png" alt="Nintendo Switch">
           <h3>Nintendo Switch</h3>
           <p>La consola híbrida más vendida.</p>
@@ -119,7 +120,7 @@
       </div>
 
       <div class="producto">
-        <a href="html/videojuegos.html" class="producto-enlace">
+        <a href="./html/productos2.html" class="producto2-enlace">
           <img src="img/pokemon.png" alt="Pokémon">
           <h3>Pokémon Edición Especial</h3>
           <p>Atrapa aventuras únicas y legendarias.</p>
@@ -127,7 +128,7 @@
       </div>
 
       <div class="producto">
-        <a href="html/videojuegos.html" class="producto-enlace">
+        <a href="" class="">
           <img src="img/ps5.png" alt="ps5">
           <h3>PlayStation 5</h3>
           <p>Sony PlayStation 5 Slim</p>
@@ -135,7 +136,7 @@
       </div>
 
       <div class="producto">
-        <a href="html/videojuegos.html" class="producto-enlace">
+        <a href="" class="">
           <img src="img/fifa.png" alt="Fifa">
           <h3>FC 26</h3>
           <p>PS5 EA Sports FC™ 26 </p>
@@ -156,6 +157,9 @@
       <button type="submit">Enviar</button>
     </form>
   </section>
+
+
+
 
   <!-- FOOTER -->
   <footer class="footer">
@@ -210,7 +214,34 @@
       musica.play();
     });
   </script>
+  <!-- MODAL DE ÉXITO -->
+  <div class="modal fade" id="successModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-gamer">
 
+        <div class="modal-header border-0">
+          <h5 class="modal-title">¡Operación completada!</h5>
+          <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+
+        </div>
+
+        <div class="modal-body">
+          La acción se ha realizado correctamente.
+        </div>
+
+        <div class="modal-footer border-0">
+          <button class="btn btn-gamer" data-bs-dismiss="modal">Aceptar</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script>
+function showSuccess() {
+  var modal = new bootstrap.Modal(document.getElementById('successModal'));
+  modal.show();
+}
+</script>
 </body>
 
 </html>

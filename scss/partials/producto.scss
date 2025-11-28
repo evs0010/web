@@ -142,3 +142,23 @@
 .contacto button:hover {
   background-color: #0097a7;
 }
+/* Tarjetas de ofertas */
+.card-oferta {
+  background-color: #ffffff;   /* tarjeta blanca */
+  color: #000000;              /* texto principal oscuro */
+}
+
+.card-oferta .card-text {
+  color: #6c757d;              /* gris suave para descripciones */
+}
+
+/* Color primario para precios */
+.text-primario {
+  color: #4BB7AE !important;
+}
+
+/* Color primario para el badge de descuento */
+.badge-descuento {
+  background-color: #4BB7AE !important;
+  color: #ffffff !important;
+}

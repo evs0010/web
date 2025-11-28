@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videojuego - Tienda Gamer</title>
+
+  <!-- Bootstrap desde node_modules -->
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+  <!-- Tu CSS principal -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="../img/logo.ico">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      <a href="../index.html">
+        <img src="../img/logo.ico" alt="Logo Tienda Gamer">
+      </a>
+    </div>
+
+    <div class="buscador-contenedor">
+      <input type="text" id="buscador" placeholder="Buscar productos...">
+    </div>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="portatiles.html">Portátiles Gaming</a></li>
+        <li><a href="videojuegos.html" class="activo">Videojuegos</a></li>
+        <li><a href="ofertas.html">Ofertas</a></li>
+        <li><a href="contactanos.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="py-5">
+    <section class="container">
+
+      <!-- Detalle del videojuego -->
+      <div class="row g-5 align-items-center">
+        <!-- Imagen -->
+        <div class="col-12 col-md-5">
+          <div class="card border-0 shadow-lg">
+            <img src="../img/pokemon.png" class="card-img-top" alt="Pokémon Edición Especial">
+          </div>
+        </div>
+
+        <!-- Info -->
+        <div class="col-12 col-md-7">
+          <span class="badge badge-descuento mb-3">Nuevo • Edición especial</span>
+
+          <h1 class="mb-3">Pokémon Edición Especial</h1>
+
+          <p class="lead text-secondary">
+            Vive una aventura única en una región repleta de nuevos Pokémon, desafíos y secretos por descubrir.
+            Explora el mundo, combate contra entrenadores y completa tu Pokédex con esta edición especial.
+          </p>
+
+          <div class="mb-3">
+            <span class="h3 text-primario fw-bold">69,99 €</span>
+            <span class="ms-2 text-muted text-decoration-line-through">79,99 €</span>
+          </div>
+
+          <ul class="list-unstyled mb-4">
+            <li>✅ Plataforma: Nintendo Switch</li>
+            <li>✅ Modo de juego: Individual y multijugador online</li>
+            <li>✅ Idioma: Español (textos y voces)</li>
+            <li>✅ Incluye contenido digital extra exclusivo</li>
+          </ul>
+
+          <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
+            <span class="badge bg-success">Stock disponible</span>
+            <span class="badge bg-dark">PEGI 7</span>
+          </div>
+
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#" class="btn btn-primary px-4">Comprar ahora</a>
+            <a href="videojuegos.html" class="btn btn-outline-light px-4">Volver a videojuegos</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Separador -->
+      <hr class="my-5 border-secondary">
+
+      <!-- También te puede interesar -->
+      <div class="mt-4">
+        <h2 class="text-center mb-4">También te puede interesar</h2>
+
+        <div class="row g-4">
+          <!-- Juego 1 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100 card-oferta border-0 shadow">
+              <img src="../img/fifa.png" class="card-img-top" alt="FC 26">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">EA Sports FC 26</h5>
+                <p class="card-text small text-secondary flex-grow-1">
+                  Lleva a tu club favorito a la gloria con el simulador de fútbol más completo.
+                </p>
+                <span class="fw-bold text-primario">59,99 €</span>
+                <a href="videojuego.html" class="btn btn-primary w-100 mt-3">Ver detalle</a>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- Juego 4 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100 card-oferta border-0 shadow">
+              <img src="../img/nintendo.png" class="card-img-top" alt="Nintendo Switch">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Pack Nintendo Switch</h5>
+                <p class="card-text small text-secondary flex-grow-1">
+                  Consola + juego digital incluido para empezar a jugar desde el primer minuto.
+                </p>
+                <span class="fw-bold text-primario">329,99 €</span>
+                <a href="videojuego.html" class="btn btn-primary w-100 mt-3">Ver detalle</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botón para volver -->
+      <div class="text-center mt-5">
+        <a href="../index.html" class="btn btn-outline-light me-2">Volver al inicio</a>
+        <a href="videojuegos.html" class="btn btn-primary">Ver todos los videojuegos</a>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-contenido">
+      <div class="footer-info">
+        <h3>Gamer Shop</h3>
+        <p>Tu tienda de confianza en tecnología y gaming.</p>
+        <p>📍 Calle Gamer #123, Ciudad Virtual</p>
+        <p>📧 contacto@gamershop.com</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Enlaces útiles</h4>
+        <ul>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Soporte técnico</a></li>
+          <li><a href="#">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-redes">
+        <h4>Síguenos</h4>
+        <div class="iconos-redes">
+          <a href="#"><img src="../img/facebook.png" alt="Facebook"></a>
+          <a href="#"><img src="../img/logotipo-de-instagram.png" alt="Instagram"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-licencia">
+      <p>© 2025 Gamer Shop — Desarrollado por <strong>Eric Raul Villacres Saldarriaga</strong></p>
+      <p>
+        Licencia:
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
+        <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC">
+        <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY">
+        <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="NC">
+        <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="SA">
+      </p>
+    </div>
+  </footer>
+
+  <!-- JS de Bootstrap -->
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
